@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "etok.us",
-    "slug": "etok.us",
+    "name": "etok",
+    "slug": "etok",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "orientation": "portrait, landscape",
+    "icon": "./assets/blueprofile.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/profile.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "white"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -19,12 +19,16 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/profile.png",
+        "backgroundColor": "white"
       }
     },
+    "scheme": "dating-app-yt",
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/profile.png"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
