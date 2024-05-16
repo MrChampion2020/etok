@@ -29,7 +29,7 @@ const index = () => {
   const fetchRecievedLikesDetails = async () => {
     try {
       const response = await axios.get(
-        `http://192.168.137.40:3000/received-likes/${userId}/details`
+        `https://etok-ef21c0e14609.herokuapp.com:3000/received-likes/${userId}/details`
       );
 
       console.log(response);
@@ -44,7 +44,7 @@ const index = () => {
   const fetchUserMatches = async () => {
     try {
       const response = await axios.get(
-        `http://192.168.137.40:3000/users/${userId}/matches`
+        `https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}/matches`
       );
 
       const userMatches = response.data.matches;

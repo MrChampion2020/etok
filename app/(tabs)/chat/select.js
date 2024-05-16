@@ -21,7 +21,7 @@ const select = () => {
 
  const handleMatch = async (selectedUserId) => {
    try {
-     await axios.post("http://192.168.137.40:3000/create-match", {
+     await axios.post("https://etok-ef21c0e14609.herokuapp.com:3000/create-match", {
        currentUserId: userId,
        selectedUserId: selectedUserId,
      });

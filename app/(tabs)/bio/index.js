@@ -1067,7 +1067,7 @@ const index = () => {
   }, []);
   const fetchUserDescription = async () => {
     try {
-      const response = await axios.get(`http://192.168.137.40:3000/users/${userId}`);
+      const response = await axios.get(`https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}`);
       console.log(response);
       const user = response.data;
 
@@ -1087,7 +1087,7 @@ const index = () => {
   const updateUserDescription = async () => {
     try {
       const response = await axios.put(
-        `http://192.168.137.40:3000/users/${userId}/description`,
+        `https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}/description`,
         {
           description: description,
         }
@@ -1119,7 +1119,7 @@ const index = () => {
   const addLookingFor = async (lookingFor) => {
     try {
       const response = await axios.put(
-        `http://192.168.137.40:3000/users/${userId}/looking-for`,
+        `https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}/looking-for`,
         {
           lookingFor: lookingFor,
         }
@@ -1137,7 +1137,7 @@ const index = () => {
   const removeLookingFor = async (lookingFor) => {
     try {
       const response = await axios.put(
-        `http://192.168.137.40:3000/users/${userId}/looking-for/remove`,
+        `https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}/looking-for/remove`,
         {
           lookingFor: lookingFor,
         }
@@ -1158,7 +1158,7 @@ const index = () => {
   const addTurnOn = async (turnOn) => {
     try {
       const response = await axios.put(
-        `http://192.168.137.40:3000/users/${userId}/turn-ons/add`,
+        `https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}/turn-ons/add`,
         {
           turnOn: turnOn,
         }
@@ -1176,7 +1176,7 @@ const index = () => {
   const removeTurnOn = async (turnOn) => {
     try {
       const response = await axios.put(
-        `http://192.168.137.40:3000/users/${userId}/turn-ons/remove`,
+        `https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}/turn-ons/remove`,
         {
           turnOn: turnOn,
         }
@@ -1214,7 +1214,7 @@ const index = () => {
   );
   const handleAddImage = async () =>{
       try{
-        const response = await axios.post(`http://192.168.137.40:3000/users/${userId}/profile-images`,{
+        const response = await axios.post(`https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}/profile-images`,{
             imageUrl:imageUrl
         });
 

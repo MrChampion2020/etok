@@ -21,7 +21,7 @@ const login = () => {
   const [password, setPassword] = useState("");
   const router = useRouter();
   useEffect(() => {
-    /*const checkLoginStatus = async () => {
+    const checkLoginStatus = async () => {
         try{
             const token = await AsyncStorage.getItem("auth");
             if(token){
@@ -31,14 +31,14 @@ const login = () => {
             console.log("Error",error)
         }
     }
-    checkLoginStatus()*/
+    checkLoginStatus()
   },[])
   const handleLogin = () => {
     const user = {
       email: email,
       password: password,
     };
-    axios.post("http://192.168.137.40:3000/login",user).then((response) => {
+    axios.post("https://etok-ef21c0e14609.herokuapp.com:3000/login",user).then((response) => {
         console.log(response);
         const token = response.data.token;
         AsyncStorage.setItem("auth",token);

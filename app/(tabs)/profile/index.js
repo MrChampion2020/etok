@@ -24,10 +24,10 @@ const Index = () => {
   useEffect(() => {
     const fetchUserDescriptionAndProfiles = async () => {
       try {
-        const responseUser = await axios.get(`http://192.168.137.40:3000/users/${userId}`);
+        const responseUser = await axios.get(`https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}`);
         setUser(responseUser.data.user);
 
-        const responseProfiles = await axios.get("http://192.168.137.40:3000/profiles", {
+        const responseProfiles = await axios.get("https://etok-ef21c0e14609.herokuapp.com:3000/profiles", {
           params: {
             userId: userId,
             gender: responseUser.data.user?.gender,

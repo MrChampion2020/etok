@@ -3,9 +3,13 @@
     "name": "etok",
     "slug": "etok",
     "version": "1.0.0",
-    "orientation": "portrait, landscape",
+    "orientation": "portrait",
     "icon": "./assets/blueprofile.png",
     "userInterfaceStyle": "light",
+     
+    "experiments": {
+      "baseUrl": "/etok"
+    },
     "splash": {
       "image": "./assets/profile.png",
       "resizeMode": "contain",
@@ -23,9 +27,11 @@
         "backgroundColor": "white"
       }
     },
-    "scheme": "dating-app-yt",
+    "scheme": "etok",
     "web": {
-      "favicon": "./assets/profile.png"
+      "favicon": "./assets/profile.png",
+      "output": "server",
+      "bundler": "metro"
     },
     "plugins": [
       "expo-router"

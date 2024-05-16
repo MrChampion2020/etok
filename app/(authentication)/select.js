@@ -23,7 +23,7 @@ const select = () => {
   },[])
   const updateUserGender = async () => {
     try{
-        const response = await axios.put(`http://192.168.137.40:3000/users/${userId}/gender`,{
+        const response = await axios.put(`https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}/gender`,{
             gender:option
         });
 

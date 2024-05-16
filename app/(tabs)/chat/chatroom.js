@@ -22,7 +22,7 @@ const chatroom = () => {
  const [message, setMessage] = useState("");
  const params = useLocalSearchParams();
  const [messages, setMessages] = useState([]);
- const socket = io("http://192.168.137.40:8000");
+ const socket = io("https://etok-ef21c0e14609.herokuapp.com:8000");
  socket.on("connect", () => {
    console.log("Connected to the Socket.IO server");
  });
@@ -81,7 +81,7 @@ const chatroom = () => {
      const senderId = params?.senderId;
      const receiverId = params?.receiverId;
 
-     const response = await axios.get("http://192.168.137.40:3000/messages", {
+     const response = await axios.get("https://etok-ef21c0e14609.herokuapp.com:3000/messages", {
        params: { senderId, receiverId },
      });
 

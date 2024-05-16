@@ -21,7 +21,7 @@ const UserChat = ({ item, userId }) => {
         try {
           const senderId = userId;
           const receiverId = item?._id;
-          const response = await axios.get("http://192.168.137.40:3000/messages", {
+          const response = await axios.get("https://etok-ef21c0e14609.herokuapp.com:3000/messages", {
             params: { senderId, receiverId },
           });
     

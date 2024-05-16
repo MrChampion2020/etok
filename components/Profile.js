@@ -20,7 +20,7 @@ const Profile = ({ item, isEven, userId, setProfiles }) => {
  const handleLike = async (selectedUserId) => {
    try {
      setLiked(true);
-     await axios.post("http://192.168.137.40:3000/send-like", {
+     await axios.post("https://etok-ef21c0e14609.herokuapp.com:3000/send-like", {
        currentUserId: userId,
        selectedUserId: selectedUserId,
      });
@@ -38,7 +38,7 @@ const Profile = ({ item, isEven, userId, setProfiles }) => {
  const handleLikeOther = async (selectedUserId) => {
    try {
      setSelcted(true);
-     await axios.post("http://192.168.137.40:3000/send-like", {
+     await axios.post("https://etok-ef21c0e14609.herokuapp.com:3000/send-like", {
        currentUserId: userId,
        selectedUserId: selectedUserId,
      });
