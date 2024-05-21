@@ -10,6 +10,7 @@ import axios from "axios";
 import { useRouter } from "expo-router";
 import { useFocusEffect } from "@react-navigation/native";
 import UserChat from "../../../components/UserChat";
+import { API_URL } from '../../../config';
 
 const index = () => {
   const router = useRouter();
@@ -29,7 +30,7 @@ const index = () => {
   const fetchRecievedLikesDetails = async () => {
     try {
       const response = await axios.get(
-        `https://etok-ef21c0e14609.herokuapp.com:3000/received-likes/${userId}/details`
+        `${API_URL}/received-likes/${userId}/details`
       );
 
       console.log(response);
@@ -44,7 +45,7 @@ const index = () => {
   const fetchUserMatches = async () => {
     try {
       const response = await axios.get(
-        `https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}/matches`
+          `${API_URL}/users/${userId}/matches`
       );
 
       const userMatches = response.data.matches;

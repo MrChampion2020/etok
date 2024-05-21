@@ -1,7 +1,9 @@
 import { StyleSheet, Text, View, Pressable, Image } from "react-native";
 import React ,{useEffect,useState} from "react";
 import { useRouter } from "expo-router";
-import axios from "axios"
+import axios from "axios";
+import { API_URL } from '../config';
+
 
 const UserChat = ({ item, userId }) => {
     const router = useRouter();
@@ -21,7 +23,7 @@ const UserChat = ({ item, userId }) => {
         try {
           const senderId = userId;
           const receiverId = item?._id;
-          const response = await axios.get("https://etok-ef21c0e14609.herokuapp.com:3000/messages", {
+          const response = await axios.get(`${API_URL}/messages`, {
             params: { senderId, receiverId },
           });
     

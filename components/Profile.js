@@ -12,6 +12,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import axios from "axios";
 import * as Animatable from "react-native-animatable";
+import { API_URL } from '../config';
 
 const Profile = ({ item, isEven, userId, setProfiles }) => {
  const colors = ["#F0F8FF", "#FFFFFF"];
@@ -20,7 +21,7 @@ const Profile = ({ item, isEven, userId, setProfiles }) => {
  const handleLike = async (selectedUserId) => {
    try {
      setLiked(true);
-     await axios.post("https://etok-ef21c0e14609.herokuapp.com:3000/send-like", {
+     await axios.post(`${API_URL}/send-like`, {
        currentUserId: userId,
        selectedUserId: selectedUserId,
      });
@@ -38,7 +39,7 @@ const Profile = ({ item, isEven, userId, setProfiles }) => {
  const handleLikeOther = async (selectedUserId) => {
    try {
      setSelcted(true);
-     await axios.post("https://etok-ef21c0e14609.herokuapp.com:3000/send-like", {
+     await axios.post(`${API_URL}/send-like`, {
        currentUserId: userId,
        selectedUserId: selectedUserId,
      });

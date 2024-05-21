@@ -5,8 +5,48 @@ node_modules/
 
 # Expo
 .expo/
-dist/
+package-lock.json
+config.js
+
+yarn.lock
+
+# Build output
+build/
+
+
+
+# Dependency directories
+jspm_packages/
+
+
 web-build/
+dist/
+.expo-shared/
+
+# Expo cache
+.expo/cache
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# React Native
+android/
+ios/
+
+# Git files
+*.lock
+*.log
+*.tmp
+
+# Webpack cache
+.cache/
 
 # Native
 *.orig.*
@@ -30,6 +70,9 @@ yarn-error.*
 
 # local env files
 .env*.local
+.env
+.env.local
+
 
 # typescript
 *.tsbuildinfo

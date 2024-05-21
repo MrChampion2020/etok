@@ -5,6 +5,7 @@ import { View, FlatList, StyleSheet } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
 import Profile from "../../../components/Profile";
+import { API_URL } from '../../../config';
 
 const Index = () => {
   const [userId, setUserId] = useState("");
@@ -24,10 +25,10 @@ const Index = () => {
   useEffect(() => {
     const fetchUserDescriptionAndProfiles = async () => {
       try {
-        const responseUser = await axios.get(`https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}`);
+        const responseUser = await axios.get(`${API_URL}/users/${userId}`);
         setUser(responseUser.data.user);
 
-        const responseProfiles = await axios.get("https://etok-ef21c0e14609.herokuapp.com:3000/profiles", {
+        const responseProfiles = await axios.get(`${API_URL}/profiles`, {
           params: {
             userId: userId,
             gender: responseUser.data.user?.gender,

@@ -6,14 +6,13 @@
     "orientation": "portrait",
     "icon": "./assets/blueprofile.png",
     "userInterfaceStyle": "light",
-     
     "experiments": {
       "baseUrl": "/etok"
     },
     "splash": {
       "image": "./assets/profile.png",
       "resizeMode": "contain",
-      "backgroundColor": "white"
+      "backgroundColor": "#FFFFFF"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -24,7 +23,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/profile.png",
-        "backgroundColor": "white"
+        "backgroundColor": "#FFFFFF"
       }
     },
     "scheme": "etok",
@@ -35,6 +34,20 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "681eef4f-16fc-47a7-a841-ece821639e86"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/681eef4f-16fc-47a7-a841-ece821639e86"
+    }
   }
 }

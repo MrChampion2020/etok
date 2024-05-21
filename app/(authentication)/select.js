@@ -6,6 +6,7 @@ import "regenerator-runtime/runtime";
 import {jwtDecode} from "jwt-decode";
 import axios from "axios"
 import { useRouter } from "expo-router";
+import { API_URL } from '../../config';
 
 const select = () => {
   const router = useRouter();
@@ -23,7 +24,7 @@ const select = () => {
   },[])
   const updateUserGender = async () => {
     try{
-        const response = await axios.put(`https://etok-ef21c0e14609.herokuapp.com:3000/users/${userId}/gender`,{
+        const response = await axios.put(`${API_URL}/users/${userId}/gender`,{
             gender:option
         });
 
