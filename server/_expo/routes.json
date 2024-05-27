@@ -1,0 +1,107 @@
+{
+  "apiRoutes": [],
+  "htmlRoutes": [
+    {
+      "file": "./index.js",
+      "page": "./index",
+      "namedRegex": "^/(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/video/index.js",
+      "page": "./(tabs)/video/index",
+      "namedRegex": "^(?:/\\(tabs\\))?/video(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/profile/index.js",
+      "page": "./(tabs)/profile/index",
+      "namedRegex": "^(?:/\\(tabs\\))?/profile(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/moments/index.js",
+      "page": "./(tabs)/moments/index",
+      "namedRegex": "^(?:/\\(tabs\\))?/moments(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/match/index.js",
+      "page": "./(tabs)/match/index",
+      "namedRegex": "^(?:/\\(tabs\\))?/match(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/chat/index.js",
+      "page": "./(tabs)/chat/index",
+      "namedRegex": "^(?:/\\(tabs\\))?/chat(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/bio/setting/index.js",
+      "page": "./(tabs)/bio/setting/index",
+      "namedRegex": "^(?:/\\(tabs\\))?/bio/setting(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/bio/payment/index.js",
+      "page": "./(tabs)/bio/payment/index",
+      "namedRegex": "^(?:/\\(tabs\\))?/bio/payment(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/bio/index.js",
+      "page": "./(tabs)/bio/index",
+      "namedRegex": "^(?:/\\(tabs\\))?/bio(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(authentication)/login.js",
+      "page": "./(authentication)/login",
+      "namedRegex": "^(?:/\\(authentication\\))?/login(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/chat/select.js",
+      "page": "./(tabs)/chat/select",
+      "namedRegex": "^(?:/\\(tabs\\))?/chat/select(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(authentication)/select.js",
+      "page": "./(authentication)/select",
+      "namedRegex": "^(?:/\\(authentication\\))?/select(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./_sitemap.tsx",
+      "page": "./_sitemap",
+      "namedRegex": "^/_sitemap(?:/)?$",
+      "routeKeys": {},
+      "generated": true
+    },
+    {
+      "file": "./(tabs)/chat/chatroom.js",
+      "page": "./(tabs)/chat/chatroom",
+      "namedRegex": "^(?:/\\(tabs\\))?/chat/chatroom(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(authentication)/register.js",
+      "page": "./(authentication)/register",
+      "namedRegex": "^(?:/\\(authentication\\))?/register(?:/)?$",
+      "routeKeys": {}
+    }
+  ],
+  "notFoundRoutes": [
+    {
+      "file": "./+not-found.tsx",
+      "page": "./+not-found",
+      "namedRegex": "^(?:/(?<notfound>.+?))?(?:/)?$",
+      "routeKeys": {
+        "notfound": "not-found"
+      },
+      "generated": true
+    }
+  ]
+}
