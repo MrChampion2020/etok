@@ -56,28 +56,7 @@ export default function Layout() {
         }}
       />
 
-      <Tabs.Screen
-        name="match"
-        options={{
-          title: "Match",
-          headerShown: false,
-          tabBarIcon: ({ focused }) =>
-            focused ? (
-              <MaterialCommunityIcons
-                name="heart-multiple-outline"
-                size={24}
-                color="#1da1f2"
-              />
-            ) : (
-              <MaterialCommunityIcons
-                name="heart-multiple-outline"
-                size={24}
-                color="gray"
-              />
-            ),
-        }}
-      />
-
+      
       <Tabs.Screen
         name="chat"
         options={{

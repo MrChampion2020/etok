@@ -7,7 +7,7 @@
     "icon": "./assets/blueprofile.png",
     "userInterfaceStyle": "light",
     "experiments": {
-      "baseUrl": "/etok"
+      "baseUrl": "/"
     },
     "splash": {
       "image": "./assets/profile.png",
@@ -18,13 +18,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "etok.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/profile.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "etok.app"
     },
     "scheme": "etok",
     "web": {
@@ -48,6 +50,7 @@
     },
     "updates": {
       "url": "https://u.expo.dev/681eef4f-16fc-47a7-a841-ece821639e86"
-    }
+    },
+    "platforms": ["ios", "android", "web"]
   }
 }
